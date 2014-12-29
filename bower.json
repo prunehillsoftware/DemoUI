@@ -1,5 +1,5 @@
 {
-  "name": "DUI",
+  "name": "DemoUI",
   "version": "0.0.1",
   "license": "",
   "ignore": [
@@ -14,7 +14,6 @@
     "bootstrap": "~3.3.0",
     "angular-ui-router": "~0.2.11",
     "jquery": "~2.1.1",
-    "angular-kendo-ui": "~1.0.3",
     "signalr": "~2.1.2",
     "toastr": "~2.1.0",
     "lodash": "~2.4.1",
