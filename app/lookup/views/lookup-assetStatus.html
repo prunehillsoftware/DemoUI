@@ -1,0 +1,7 @@
+<div data-ng-show="vm.loadModel.isLoading">Loading...</div>
+<div data-ng-show="!vm.loadModel.isLoading && vm.loadModel.loadError">{{vm.loadModel.loadError.title}}: {{vm.loadModel.loadError.status}}</div>
+<div data-ng-show="vm.loadModel.isLoaded">
+    <ul data-ng-repeat="status in vm.assetStatuses">
+        <li>{{status.description}}</li>
+    </ul>
+</div>

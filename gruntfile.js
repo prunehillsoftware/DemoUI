@@ -99,13 +99,13 @@ module.exports = function (grunt) {
             options: {
                 target: 'es5',
                 //module: 'amd',
-                sourceMap: true,
-                compiler: './node_modules/typescript/bin/tsc'
+                sourceMap: true
+                //,compiler: './node_modules/typescript/bin/tsc'
             },
             dev: {
-                src: ['src/app/**/*.ts'],
-                reference: 'src/reference.ts',
-                out: 'src/app.js'
+                src: ['app/**/*.ts'],
+                reference: 'app/reference.ts',
+                out: 'app/app.js'
                 //watch: 'src/app'
             }
         },

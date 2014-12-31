@@ -1,5 +1,5 @@
-﻿module Shell {
-    angular.module("shell", ["core", "examples", "ui.router"])
+﻿﻿module Shell {
+    angular.module("shell", ["core", "owner", "lookup", "ui.router"])
         .config(($stateProvider: ng.ui.IStateProvider, $urlRouterProvider: ng.ui.IUrlRouterProvider) => {
 
             $urlRouterProvider.otherwise("/");
@@ -13,70 +13,28 @@
                         }
                     }
                 })
-                .state("examples", {
-                    url: "examples",
+                .state("owners", {
+                    url: "owners",
                     views: {
                         "main": {
-                            templateUrl: "app/modules/examples/views/home.html"
+                            templateUrl: "app/owner/views/home.html"
                         }
                     }
                 })
-                .state("examples.datapull", {
-                    url: "datapull",
+                .state("lookup", {
+                    url: "lookup",
                     views: {
-                        "examplebody@examples": {
-                            templateUrl: "app/modules/examples/views/example-datapull.html",
-                            controller: Examples.ExampleDataPullController,
-                            controllerAs: "vm"
+                        "main": {
+                            templateUrl: "app/modules/lookup/views/home.html"
                         }
                     }
                 })
-                .state("examples.dataput", {
-                    url: "dataput",
+                .state("lookup.assetClass", {
+                    url: "assetClass",
                     views: {
-                        "examplebody@examples": {
-                            templateUrl: "app/modules/examples/views/example-dataput.html",
-                            controller: Examples.ExampleDataPutController,
-                            controllerAs: "vm"
-                        }
-                    }
-                })
-                .state("examples.dataput2", {
-                    url: "dataput2",
-                    views: {
-                        "examplebody@examples": {
-                            templateUrl: "app/modules/examples/views/example-dataput2.html",
-                            controller: Examples.ExampleDataPutWithLookupsController,
-                            controllerAs: "vm"
-                        }
-                    }
-                })
-                .state("examples.datapost", {
-                    url: "datapost",
-                    views: {
-                        "examplebody@examples": {
-                            templateUrl: "app/modules/examples/views/example-datapost.html",
-                            controller: Examples.ExampleDataPostController,
-                            controllerAs: "vm"
-                        }
-                    }
-                })
-                .state("examples.listener", {
-                    url: "listener",
-                    views: {
-                        "examplebody@examples": {
-                            templateUrl: "app/modules/examples/views/example-listeningforchanges.html",
-                            controller: Examples.ExampleSocketListenerController,
-                            controllerAs: "vm"
-                        }
-                    }
-                })
-                .state("examples.sockets", {
-                    url: "sockets",
-                    views: {
-                        "examplebody@examples": {
-                            templateUrl: "app/modules/examples/views/example-sockets.html",
-                            controller: Examples.ExamplesWebSocketsController,
+                        "lookupBody@lookup": {
+                            templateUrl: "app/modules/lookup/views/assetClass.html",
+                            controller: Lookup.LookupAssetClassController,
                             controllerAs: "vm"
                         }
                     }

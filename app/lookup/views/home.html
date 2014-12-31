@@ -1,0 +1,20 @@
+<style>
+    div.lookupHeader {
+        padding: 4px 0px;
+        height: 30px;
+        background-color: darkblue;
+        color: white;
+    }
+    a.lookupLink {
+        margin: 0px 5px;
+        text-decoration: none;
+        color: white;
+    }
+</style>
+
+<div class="lookupHeader">
+    <a class="lookupLink" ui-sref="lookup.assetClass">Asset Classes</a>
+    |
+    <a class="lookupLink" ui-sref="lookup.assetStatus">Asset Statuses</a>
+</div>
+<div ui-view="lookupBody" style="margin-top: 5px;"></div>
