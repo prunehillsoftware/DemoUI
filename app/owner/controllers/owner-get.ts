@@ -26,14 +26,15 @@ module Owner {
                     });
                 },
                 (errorResponse) => {
-                    scope.ownersLoadError = { error: 'Error Loading Owners', reason: errorResponse.status + ": " + errorResponse.statusText };
+                    scope.ownersLoadError = { error: errorResponse.status };
+                    //scope.ownersLoadError = { error: "Error Loading Owners", reason: errorResponse.status + ": "
+                    // + errorResponse.statusText };
                 }
-            )
-                .finally(() => {
-
-                });
+            );
+                //.finally(() => {
+                //
+                //});
         }
-
 
         private init(): void {
             this.loadOwners(1);

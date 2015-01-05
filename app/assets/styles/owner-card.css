@@ -1,0 +1,269 @@
+.animal-family {
+    position: absolute;
+    right: 24px;
+    top: 4px;
+}
+
+.sex-code {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+}
+
+.owner-card-wrapper {
+    width: 100%;
+    display: inline-block;
+    padding: 0 5px 0 0;
+    margin-bottom: 5px;
+    line-height: 0px;
+}
+
+.owner-card {
+    width: 100%;
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #d9dadb;
+    position: relative;
+    background-color: #ffffff;
+}
+
+.owner-card:hover {
+}
+
+.owner-card.preventive-care {
+    background: rgba(57,181,74,1);
+    background: -moz-linear-gradient(left, rgba(57,181,74,1) 0%, rgba(57,181,74,1) 2%, rgba(255,255,255,1) 2%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(57,181,74,1)), color-stop(2%, rgba(57,181,74,1)), color-stop(2%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(left, rgba(57,181,74,1) 0%, rgba(57,181,74,1) 2%, rgba(255,255,255,1) 2%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(left, rgba(57,181,74,1) 0%, rgba(57,181,74,1) 2%, rgba(255,255,255,1) 2%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(left, rgba(57,181,74,1) 0%, rgba(57,181,74,1) 2%, rgba(255,255,255,1) 2%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(to right, rgba(57,181,74,1) 0%, rgba(57,181,74,1) 2%, rgba(255,255,255,1) 2%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#39b54a', endColorstr='#ffffff', GradientType=1 );
+}
+
+.owner-card.vaccine {
+    background: rgba(156,218,165,1);
+    background: -moz-linear-gradient(left, rgba(156,218,165,1) 0%, rgba(156,218,165,1) 2%, rgba(255,255,255,1) 2%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(156,218,165,1)), color-stop(2%, rgba(156,218,165,1)), color-stop(2%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(left, rgba(156,218,165,1) 0%, rgba(156,218,165,1) 2%, rgba(255,255,255,1) 2%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(left, rgba(156,218,165,1) 0%, rgba(156,218,165,1) 2%, rgba(255,255,255,1) 2%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(left, rgba(156,218,165,1) 0%, rgba(156,218,165,1) 2%, rgba(255,255,255,1) 2%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(to right, rgba(156,218,165,1) 0%, rgba(156,218,165,1) 2%, rgba(255,255,255,1) 2%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9cdaa5', endColorstr='#ffffff', GradientType=1 );
+}
+
+.anesthetic {
+    background: rgba(255,0,0,1);
+    background: -moz-linear-gradient(left, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 2%, rgba(255,255,255,1) 2%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,0,0,1)), color-stop(2%, rgba(255,0,0,1)), color-stop(2%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(left, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 2%, rgba(255,255,255,1) 2%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(left, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 2%, rgba(255,255,255,1) 2%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(left, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 2%, rgba(255,255,255,1) 2%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(to right, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 2%, rgba(255,255,255,1) 2%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#ffffff', GradientType=1 );
+}
+
+.re-check {
+    background: rgba(128,223,249,1);
+    background: -moz-linear-gradient(left, rgba(128,223,249,1) 0%, rgba(128,223,249,1) 2%, rgba(255,255,255,1) 2%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(128,223,249,1)), color-stop(2%, rgba(128,223,249,1)), color-stop(2%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(left, rgba(128,223,249,1) 0%, rgba(128,223,249,1) 2%, rgba(255,255,255,1) 2%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(left, rgba(128,223,249,1) 0%, rgba(128,223,249,1) 2%, rgba(255,255,255,1) 2%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(left, rgba(128,223,249,1) 0%, rgba(128,223,249,1) 2%, rgba(255,255,255,1) 2%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(to right, rgba(128,223,249,1) 0%, rgba(128,223,249,1) 2%, rgba(255,255,255,1) 2%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80dff9', endColorstr='#ffffff', GradientType=1 );
+}
+
+.everything-else {
+    background: rgba(0,191,243,1);
+    background: -moz-linear-gradient(left, rgba(0,191,243,1) 0%, rgba(0,191,243,1) 2%, rgba(255,255,255,1) 2%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,191,243,1)), color-stop(2%, rgba(0,191,243,1)), color-stop(2%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(left, rgba(0,191,243,1) 0%, rgba(0,191,243,1) 2%, rgba(255,255,255,1) 2%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(left, rgba(0,191,243,1) 0%, rgba(0,191,243,1) 2%, rgba(255,255,255,1) 2%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(left, rgba(0,191,243,1) 0%, rgba(0,191,243,1) 2%, rgba(255,255,255,1) 2%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(to right, rgba(0,191,243,1) 0%, rgba(0,191,243,1) 2%, rgba(255,255,255,1) 2%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00bff3', endColorstr='#ffffff', GradientType=1 );
+}
+
+.card-expanded {
+}
+
+.owner-card-top {
+    width: 100%;
+    float: left;
+    position: relative;
+    padding: 0 0 14px 0;
+    line-height: 0px;
+}
+
+.owner-card-bottom {
+    width: 100%;
+    height: 32px;
+    float: left;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 10px 0 0 14px;
+    position: relative;
+}
+
+.owner-card-patient {
+    width: 100%;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 0 8px 0 14px;
+    float: left;
+}
+
+.owner-card-client {
+    width: 100%;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 0 8px 0 14px;
+    float: left;
+}
+
+.owner-card-exam-room {
+    left: 32px;
+}
+
+.scheduled-time {
+    font-weight: bold;
+}
+
+.patient-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 19px 64px 5px 0;
+    color: #000000;
+}
+
+.patient-flags {
+    width: 100%;
+    padding: 8px 0 0 0;
+    float: left;
+}
+
+.patient-notes {
+    width: 100%;
+    padding: 8px 0 12px 0;
+    float: left;
+}
+
+.client-name {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 0 64px 0 0;
+    color: #464646;
+    float: left;
+}
+
+.client-phone {
+    padding: 0 64px 8px 0;
+    color: #2d2d2d;
+    float: left;
+}
+
+.client-flags {
+    width: 100%;
+    padding: 0 0 8px 0;
+    float: left;
+}
+
+.client-notes {
+    width: 100%;
+    padding: 0 0 8px 0;
+    float: left;
+}
+
+
+.staff-name {
+    font-weight: normal;
+}
+
+.actions-wrapper {
+    position: absolute;
+    top: 9px;
+    right: 10px;
+}
+
+.actions-dropdown.card {
+    width: 18px;
+    height: 18px;
+    display: block;
+    cursor: pointer;
+    border: none;
+    color: rgba(0, 0, 0, 0);
+    border-radius: 0px;
+    background: none;
+    background-image: url("../images/more-menu.png");
+    background-repeat: no-repeat;
+    padding: 0px;
+    margin: 0 0 0 0;
+}
+
+.wellness-plan {
+    position: absolute;
+    right: 4px;
+    top: 24px;
+    font-weight: bold;
+}
+
+.card-flag-wrapper {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    width: 60px;
+}
+
+.card-flag {
+    width: 100%;
+    height: 20px;
+    margin: 0 0 5px 0;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+
+    border: 1px solid #d9dadb;
+}
+
+.card-flag.M {
+    border: 1px solid #009aff;
+}
+
+.card-flag.MN {
+    border: 1px solid #009aff;
+}
+
+.card-flag.F {
+    border: 1px solid #f49ac1;
+}
+
+.card-flag.FS {
+    border: 1px solid #f49ac1;
+}
+
+.wellness-plan-active {
+    color: #000000;
+}
+
+.wellness-plan-inactive {
+    color: #d9dadb;
+}
+
+.out-patient {
+    background-color: #808080;
+    border-color: #808080;
+}
+
+.surgery-dental {
+    background-color: #ff0000;
+    border-color: #ff0000;
+}
+
+.owner-card-click-trap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}

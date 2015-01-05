@@ -1,0 +1,62 @@
+/**
+ * Wrapper Minimum Width
+ *
+ * @TODO - 1440px will allow for
+ * horizontal scroll on a 13in. monitor
+ */
+body {
+    overflow: hidden;
+    min-width: 1440px;
+}
+
+/** Check-in Specific Layout **/
+body.check-in {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    min-width: 1440px;
+}
+body.check-in .my-main-wrapper {
+    min-width: 100%;
+}
+.my-main-wrapper {
+    overflow: hidden;
+}
+body.check-in .my-main-wrapper .main-view {
+    /*overflow-x: hidden;*/
+    min-width: 100%;
+}
+body.check-in .my-main-wrapper .row.checkin-header,
+body.check-in .row.checkin-form {
+    min-width: 1440px;
+}
+body.check-in .checkin-assignment-wrapper {
+    overflow: hidden;
+}
+
+.my-main-wrapper,
+.main-view {
+    /* min-width: 1440px; */
+    min-width: 1440px;
+}
+
+.main-view {
+    top: 55px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
+
+.drag-container {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    pointer-events: none;
+    overflow: hidden;
+}

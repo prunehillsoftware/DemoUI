@@ -40,7 +40,7 @@ module.exports = function (grunt) {
                     {
                         expand: true,
                         flatten: true,
-                        cwd: 'src/',
+                        cwd: 'app/',
                         src: ['app.js.map'],
                         dest: 'wwwroot/js/'
                     }
@@ -51,9 +51,19 @@ module.exports = function (grunt) {
                     {
                         expand: true,
                         flatten: false,
-                        cwd: 'src/',
+                        cwd: 'app/',
                         src: ['**/*.ts'],
-                        dest: 'wwwroot/'
+                        dest: 'wwwroot/js/'
+                    }
+                ]
+            },
+            assets: {
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'app/assets/',
+                        src: ['**/*'],
+                        dest:'wwwroot/assets/'
                     }
                 ]
             },
@@ -67,7 +77,7 @@ module.exports = function (grunt) {
                             'bootstrap/dist/css/bootstrap.css',
                             'bootstrap/dist/css/bootstrap.css.map'
                         ],
-                        dest: 'wwwroot/css/'
+                        dest: 'wwwroot/assets/styles/'
                     }
                 ]
             },
@@ -83,15 +93,16 @@ module.exports = function (grunt) {
         concat: {
             libs: {
                 src: [
-                    'bower_components/jquery/dist/jquery.min.js',
-                    'bower_components/angular/angular.min.js',
+                    'bower_components/jquery/dist/jquery.js',
+                    'bower_components/angular/angular.js',
                     'bower_components/angular-ui-router/release/angular-ui-router.min.js',
-                    'bower_components/bootstrap/dist/js/bootstrap.min.js'
+                    'bower_components/bootstrap/dist/js/bootstrap.js',
+                    'bower_components/toastr/toastr.min.js'
                 ],
-                dest: 'wwwroot/js/lib.min.js'
+                dest: 'wwwroot/js/lib.js'
             },
             app: {
-                src: ['src/app.js'],
+                src: ['app/app.js'],
                 dest: 'wwwroot/js/app.js'
             }
         },
@@ -106,7 +117,7 @@ module.exports = function (grunt) {
                 src: ['app/**/*.ts'],
                 reference: 'app/reference.ts',
                 out: 'app/app.js'
-                //watch: 'src/app'
+                //watch: 'app'
             }
         },
         tslint: {
@@ -114,7 +125,7 @@ module.exports = function (grunt) {
                 configuration: grunt.file.readJSON("tslint.json")
             },
             files: {
-                src: ['src/**/*.ts']
+                src: ['app/**/*.ts']
             }
         },
         "tpm-install": {
@@ -150,8 +161,8 @@ module.exports = function (grunt) {
         watch: {
             scripts: {
                 files: [
-                    'src/app/**/*.ts',
-                    'src/**/*.html'
+                    'app/**/*.ts',
+                    '**/*.html'
                 ],
                 tasks: ['dev'],
                 options: {
@@ -172,6 +183,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-node-webkit-builder');
 
     // build tasks DEV/RELEASE
-    grunt.registerTask('dev', ['clean', 'copy:html', 'copy:css', 'copy:ts', 'tpm-install', 'tpm-index', 'tslint', 'ts', 'concat', 'uglify', 'copy:map', 'clean:ts']);
+    grunt.registerTask('dev', ['clean', 'copy:html', 'copy:assets', 'copy:css', 'copy:ts', 'tpm-install', 'tpm-index', 'tslint', 'ts', 'concat', 'uglify', 'copy:map', 'clean:ts']);
     grunt.registerTask('release', ['dev', 'copy:nodewebkit', 'nodewebkit']);
 };

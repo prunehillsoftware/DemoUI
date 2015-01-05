@@ -1,0 +1,266 @@
+/**
+ * NAVBAR
+ */
+.navbar.navbar-default {
+    height: 55px;
+    background-color: #1b88e3;
+    background-image: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+}
+.navbar.navbar-default.affix {
+    z-index: 9;
+    left: 0;
+    width: 100%;
+}
+.navbar.navbar-default .navbar-header,
+.navbar.navbar-default .container-fluid,
+.navbar.navbar-default .navbar-brand {
+    height: 55px;
+    padding: 0;
+    margin: 0;
+
+}
+.navbar.navbar-default .navbar-brand {
+    color: #fff;
+    line-height: 55px;
+    box-shadow: none;
+    font-size: 2em;
+}
+
+
+/**
+ * PRIMARY SITE NAVIGATION
+ */
+
+.navbar-section {
+    display: inline-block;
+    height: 55px;
+}
+
+.navbar-left {
+    margin-left: 70px;
+}
+
+.navbar-right {
+    margin-right: 0px;
+}
+
+.navbar-search {
+    margin-left: 150px;
+}
+
+.navbar-link {
+    width: 60px;
+    height: 55px;
+    cursor: pointer;
+    display: inline-block;
+    float:left;
+}
+
+.navbar-divider {
+    background-color: #4ca2e9;
+    width: 1px;
+    height: 25px;
+    display: inline-block;
+    position: relative;
+    top: 15px;
+}
+
+
+
+.navbar-link:hover, .navbar-link-new-client:hover {
+    background: #3d9ae7;
+}
+
+.navbar-icon {
+    display: inline-block;
+    width: 60px;
+    height: 55px;
+    float:left;
+}
+
+.navbar-branding {
+    width: 113px;
+    height: 55px;
+    background-image: url("../images/branding.png");
+    cursor: pointer;
+    display: inline-block;
+}
+
+.caption-new-client {
+    width: 90px;
+    display: inline-block;
+    float:left;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 55px;
+}
+
+.navbar-link-new-client {
+    width: 150px;
+    height: 55px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.active {
+    background: #3d9ae7;
+}
+
+.link-today {
+    background-image: url("../images/today.png");
+}
+
+.link-calendar {
+    background-image: url("../images/calendar.png");
+}
+
+.link-settings {
+    background-image: url("../images/settings.png");
+}
+
+.link-new-client {
+    background-image: url("../images/new-client.png");
+}
+
+.link-alarm {
+    background-image: url("../images/alarm.png");
+}
+
+.link-alarm {
+    background-image: url("../images/alarm.png");
+}
+
+.link-exit {
+    background-image: url("../images/exit.png");
+}
+
+
+#my-nav {
+    border: none;
+    z-index: 99999999999;
+    /* overflow: hidden; */
+}
+#my-nav .navbar-nav a {
+    line-height: 66px;
+    color: #fff;
+    text-shadow: none;
+}
+#my-nav .navbar-nav a i {
+    color: #fff;
+    font-size: 1.8em;
+}
+#my-nav .navbar-nav a:hover,
+#my-nav .navbar-nav .active a {
+    height: 55px;
+    background: #3d9ae7;
+}
+
+/** Notifications **/
+#my-nav .navbar-nav.navbar-right .alerts {
+    padding: 10px 25px 0 3px;
+}
+#my-nav .navbar-nav.navbar-right .notifications {
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    line-height: 22px;
+    display: inline-block;
+    color: #fff;
+    position: relative;
+    background: #ec5737;
+    top: -19px;
+    text-align: center;
+    left: 37px;
+    z-index: 9;
+}
+#my-nav .navbar-nav.navbar-right .account {
+    padding: 10px 20px 0 35px;
+}
+#my-nav .navbar-nav.navbar-right .account .caret{
+    position: relative;
+    top: -7px;
+}
+
+/** Search **/
+.search-wrapper {
+    width: 432px;
+    height: 26px;
+    border: 1px solid #41aaff;
+    margin-top:13px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.search-form {
+    height: 55px;
+    margin: 0;
+    padding: 0;
+}
+
+.search-form .form-group .form-control {
+    height: 26px;
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: #ffffff;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+}
+
+.search-field .form-control {
+    width: 251px;
+}
+
+.form-control::-webkit-input-placeholder { color: #41aaff; }
+
+.search-field {
+    width: 275px;
+    padding: 0 12px 0 12px;
+}
+
+
+.search-form .btn-group .btn {
+    border: none;
+    height: 26px;
+    background: none;
+    font-size: 14px;
+    color: #ffffff;
+    box-shadow: none;
+    line-height: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.search-filter .btn {
+    width: 106px;
+}
+
+
+.divider {
+    background-color: #41aaff;
+    width: 1px;
+    height: 14px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+}
+
+
+.search-submit {
+    width: 36px;
+    background-color: #41aafd;
+}
+
+.search-submit .btn {
+    box-shadow: none;
+    width: 36px;
+}
+
+::-webkit-input-placeholder {
+    color: #41aaff;
+    font-weight: 100;
+}

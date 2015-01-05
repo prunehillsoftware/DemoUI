@@ -9,7 +9,7 @@
                     url: "/",
                     views: {
                         "main": {
-                            templateUrl: "app/shell/views/home.html"
+                            templateUrl: "shell/views/home.html"
                         }
                     }
                 })
@@ -17,7 +17,7 @@
                     url: "owners",
                     views: {
                         "main": {
-                            templateUrl: "app/owner/views/home.html"
+                            templateUrl: "owner/views/home.html"
                         }
                     }
                 })
@@ -25,7 +25,7 @@
                     url: "lookup",
                     views: {
                         "main": {
-                            templateUrl: "app/modules/lookup/views/home.html"
+                            templateUrl: "modules/lookup/views/home.html"
                         }
                     }
                 })
@@ -33,7 +33,7 @@
                     url: "assetClass",
                     views: {
                         "lookupBody@lookup": {
-                            templateUrl: "app/modules/lookup/views/assetClass.html",
+                            templateUrl: "modules/lookup/views/assetClass.html",
                             controller: Lookup.LookupAssetClassController,
                             controllerAs: "vm"
                         }

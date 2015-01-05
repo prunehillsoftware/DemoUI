@@ -1,4 +1,3 @@
-/// <reference path="services/logger.ts" />
 
 module Core {
 
