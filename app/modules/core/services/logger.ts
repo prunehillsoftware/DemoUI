@@ -1,4 +1,5 @@
-﻿module Core {
+﻿
+module Core {
     "use strict";
 
     export class Logger {

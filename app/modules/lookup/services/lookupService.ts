@@ -1,8 +1,8 @@
-﻿
+﻿/// <reference path="../../core/services/baseHttpService.ts" />
 module Lookup {
     "use strict";
 
-    export class LookupService  extends Core.HttpServiceBase {
+    export class LookupService extends Core.HttpServiceBase {
 
         isDebug = false;
 
