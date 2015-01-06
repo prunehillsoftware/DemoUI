@@ -1,4 +1,4 @@
-﻿/// <reference path="../../core/services/baseHttpService.ts" />
+﻿/// <reference path="../../../core/services/baseHttpService.ts" />
 module Lookup {
     "use strict";
 

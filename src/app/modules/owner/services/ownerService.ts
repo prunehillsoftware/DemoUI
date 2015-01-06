@@ -1,4 +1,4 @@
-/// <reference path="../../core/services/baseHttpService.ts" />
+/// <reference path="../../../core/services/baseHttpService.ts" />
 module Owner {
     "use strict";
 

@@ -8,8 +8,8 @@ module.exports = function (grunt) {
                 'bin'
             ],
             ts: [
-                'app/app.*',
-                'app/ts',
+                'src/app.*',
+                'src/ts',
                 'tscommand*'
             ]
         },
@@ -19,7 +19,7 @@ module.exports = function (grunt) {
                     {
                         expand: true,
                         flatten: false,
-                        cwd: 'app/',
+                        cwd: 'src/',
                         src: ['**/*.html'],
                         dest: 'wwwroot/'
                     }
@@ -40,7 +40,7 @@ module.exports = function (grunt) {
                     {
                         expand: true,
                         flatten: true,
-                        cwd: 'app/',
+                        cwd: 'src/',
                         src: ['app.js.map'],
                         dest: 'wwwroot/js/'
                     }
@@ -51,7 +51,7 @@ module.exports = function (grunt) {
                     {
                         expand: true,
                         flatten: false,
-                        cwd: 'app/',
+                        cwd: 'src/',
                         src: ['**/*.ts'],
                         dest: 'wwwroot/js/'
                     }
@@ -61,13 +61,13 @@ module.exports = function (grunt) {
                 files: [
                     {
                         expand: true,
-                        cwd: 'app/assets/',
+                        cwd: 'src/assets/',
                         src: ['**/*'],
                         dest:'wwwroot/assets/'
                     }
                 ]
             },
-            css: {
+            bowercss: {
                 files: [
                     { // bower css
                         expand: true,
@@ -77,6 +77,17 @@ module.exports = function (grunt) {
                             'bootstrap/dist/css/bootstrap.css',
                             'bootstrap/dist/css/bootstrap.css.map'
                         ],
+                        dest: 'wwwroot/assets/styles/'
+                    }
+                ]
+            },
+            modulecss: {
+                files: [
+                    {
+                        expand: true,
+                        flatten: true,
+                        cwd: 'src/',
+                        src: ['**/*.css'],
                         dest: 'wwwroot/assets/styles/'
                     }
                 ]
@@ -114,9 +125,9 @@ module.exports = function (grunt) {
                 //,compiler: './node_modules/typescript/bin/tsc'
             },
             dev: {
-                src: ['app/**/*.ts'],
-                reference: 'app/reference.ts',
-                out: 'app/app.js'
+                src: ['src/app/**/*.ts'],
+                reference: 'src/reference.ts',
+                out: 'src/app.js'
                 //watch: 'app'
             }
         },
@@ -125,7 +136,7 @@ module.exports = function (grunt) {
                 configuration: grunt.file.readJSON("tslint.json")
             },
             files: {
-                src: ['app/**/*.ts']
+                src: ['src/**/*.ts']
             }
         },
         "tpm-install": {
@@ -161,8 +172,8 @@ module.exports = function (grunt) {
         watch: {
             scripts: {
                 files: [
-                    'app/**/*.ts',
-                    '**/*.html'
+                    'src/app/**/*.ts',
+                    'src/**/*.html'
                 ],
                 tasks: ['dev'],
                 options: {
@@ -183,6 +194,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-node-webkit-builder');
 
     // build tasks DEV/RELEASE
-    grunt.registerTask('dev', ['clean', 'copy:html', 'copy:assets', 'copy:css', 'copy:ts', 'tpm-install', 'tpm-index', 'tslint', 'ts', 'concat', 'uglify', 'copy:map', 'clean:ts']);
+    grunt.registerTask('dev', ['clean', 'copy:html', 'copy:assets', 'copy:bowercss', 'copy:modulecss', 'copy:ts', 'tpm-install', 'tpm-index', 'tslint', 'ts', 'concat', 'uglify', 'copy:map', 'clean:ts']);
     grunt.registerTask('release', ['dev', 'copy:nodewebkit', 'nodewebkit']);
 };
